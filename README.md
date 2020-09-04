@@ -1,4 +1,11 @@
 # Launch-your-own-restaurant-review-site-P7-OpenClassrooms-
+
+Requirements:
+1. A Google Maps map loaded with the Google Maps API.
+2. A list of restaurants on the right side of the page that are within the area displayed on the map.
+3. Add a review about an existing restaurant.
+4. Add a restaurant by clicking on a specific place on the map.
+
 You've chosen to get started in the restaurant review business! Your goal is to create an easy-to-use, simple service that offers reviews of restaurants around you.  For this project, you have to learn to use external APIs such as Google Maps and Google Places (your biggest competitor 😬). That's not all: you will have to integrate all this information in a clear, organized way in your application!  You will also be required to code using good coding practices like you've learned so far, among which object-oriented programming is one of the most important.
 
 Step 1: Restaurants
