@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Your Restauarant's Review Portal</title>
+    <meta author_name="Kamila Pochojka">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1> Find the best restaurant nearby.</h1>
+    </header>
+    <main>
+        <div class="map-overlay">
+            <div id="map"></div>
+            <div class="info-wrapper">
+                <div id="options" class="sort">
+                    <label for="sort">Sort By Rating</label>
+                    <select name="sort" id="sort">
+                        <option value="all">All</option>
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="five">5</option>
+                    </select>
+                </div>
+                <div id="result-list">
+                    <div id="results"></div>
+                    <button id="more">More results</button>
+                </div>
+            </div>
+            <div id="information">
+                <div id="info-icon"></div>
+                <h3 id="info-rating"></h3>
+                <div class="extra-details">
+                    <div id="info-url"></div>
+                    <div id="info-address"></div>
+                    <div id="info-phone"></div>
+                    <div id="iw-website"></div>
+                    <div id="iw-open"></div>
+                    <a href="#restaurant-info" id="info-reviews"></a>
+                </div>
+            </div>
+            <div id="information-new-restaurant">
+                <form id="add-restaurant" action="post">
+                </form>
+            </div>
+        </div>
+        <div id="restaurant-info">
+            <div class="container">
+                <div id="street-view">
+                    <div id="street-view-window">
+                        <div id="pano" width="150px" height="250px"></div>
+                    </div>
+                    <div id="photo"></div>
+                </div>
+                <div id="see-photo"></div>
+                <div class="restaurant">
+                    <div class="button-menu">
+                    </div>
+                    <h2 class="restaurant-name" id="name"></h2>
+                    <p class="restaurant-details" id="address"></p>
+                    <p class="restaurant-details" id="telephone"></p>
+                    <p class="restaurant-details" id="website"></p>
+                    <div class="review-header">
+                        <h3 class="title">Reviews</h3>
+                    </div>
+                    <div id="reviews"></div>
+                    <div id="show-message"></div>
+                    <button class="main-button" id="add-review-button" onclick="createReviewWindow()">Add a Review</button>
+                    <div id="review-window"></div>
+                    <button type="submit" id="review-submit" class="main-button" onclick="submitReview()">Add Review</button>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/app.js"></script>
+    
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB94wtYbbU7JEsO8XIF9sJpMTAlBsBVti0&libraries=places&callback=initMap" async defer></script>
+    
+</body>
+
+</html>
